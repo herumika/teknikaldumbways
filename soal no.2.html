@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soal Nomer 3</title>
+</head>
+<body>
+    <script>
+   function median(arr) {
+  const arrSorted = arr.sort((a, b) => a - b);
+  return arrSorted.length % 2 === 0 ? (arrSorted[arrSorted.length/2 - 1] + arrSorted[arrSorted.length/2]) / 2 : arrSorted[Math.floor(arrSorted.length/2)];
+}
+
+const data = [0, 1,2,4,6,5,3];
+console.log(`Median: ${median(data)}`);
+
+    </script>
+    
+</body>
+</html>
